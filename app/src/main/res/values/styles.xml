@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.AppCompat.Light.NoActionBar2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">@android:color/holo_blue_light</item>
+    </style>
+
+</resources>

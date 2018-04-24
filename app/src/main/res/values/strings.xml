@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HelloAndroid</string>
+    <string name="headline">Say hello to the world \nwith your first Android app!</string>
+    <string name="subheading">Enroll in Android Developer Nanodegree</string>
+    <string name="designed">Designed by</string>
+    <string name="udacity_information">2465 Latham St \nMountain View, CA 94043 \n650-555-5555</string>
+    <string name="google_information">1600 Amphitheatre Pkwy \nMountain View, CA 94043 \n650-33-3333</string>
+    <string name="button_text">Join Now</string>
+</resources>

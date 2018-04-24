@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mishk.helloandroid.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/actionBarColor"
+        android:elevation="4dp"
+        android:theme="@style/HelloAndroidTheme"
+        app:popupTheme="@style/HelloAndroidTheme"
+        app:title="@string/app_name"
+        app:titleTextColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/photo"
+        android:layout_marginTop="10dp"
+        android:background="#eceff1"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="8dp"
+        android:text="@string/headline"
+        android:textAlignment="center"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_marginBottom="8dp"
+        android:background="#eceff1"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="8dp"
+        android:text="@string/subheading"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hello" />
+
+
+    <TextView
+        android:id="@+id/udacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/designed" />
+
+    <ImageView
+        android:id="@+id/udacity_logo"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/udacity"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/udacity"
+        android:layout_toStartOf="@+id/udacity"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/udacity_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/udacity_logo"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/udacity_information"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/googleLogo"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/udacity"
+        android:layout_toEndOf="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:src="@drawable/googlelogo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/googleLogo"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:text="@string/google_information"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/udacity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/udacity"
+        android:layout_marginBottom="9dp"
+        android:background="@color/textColorPrimary"
+        android:elegantTextHeight="true"
+        android:fontFamily="sans-serif"
+        android:onClick="openEnrollmentPage"
+        android:text="@string/button_text"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>
